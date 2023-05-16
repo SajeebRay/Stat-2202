@@ -18,3 +18,10 @@ if(tcal > ttab){
 }else{
   print("Null hypothesis is accepted")
 }
+
+pvalue = pt(tcal, n-2, lower.tail = FALSE); pvalue
+if(alpha > pvalue){
+  print("Null hypothesis is rejected")
+}else{
+  print("Null hypothesis is accepted")
+}
